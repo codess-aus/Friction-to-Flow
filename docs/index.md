@@ -166,16 +166,3 @@ the table before. But I still own the code. Always.
   </a>
 
 </div>
-
-<section class="f2f-meta" markdown>
-
-### How to use this site
-
-- The talk is **30 minutes, 15 slides** — roughly two minutes per chapter.
-- Each chapter opens with its slide as a hero image and contains the spoken
-  narrative beneath. Speaker notes live as hidden HTML comments in the
-  source.
-- Toggle dark / light mode using the icon in the top-right. The palette is
-  strict high contrast — pure black / pure white text, no greys.
-
-</section>
