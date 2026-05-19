@@ -1,0 +1,77 @@
+site_name: From Friction to Flow
+site_description: How GitHub Copilot transformed my daily workflow and amplified my impact.
+site_url: https://codess-aus.github.io/Friction-to-Flow/
+repo_url: https://github.com/codess-aus/Friction-to-Flow
+repo_name: codess-aus/Friction-to-Flow
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - content.action.edit
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: f2f-light
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: f2f-dark
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/codess-aus/Friction-to-Flow
+
+nav:
+  - Home: index.md
+  - Chapters:
+      - 1. From Friction to Flow: 01-friction-to-flow.md
+      - 2. The Daily Friction: 02-daily-friction.md
+      - 3. More Than Faster Coding: 03-more-than-faster-coding.md
+      - 4. Defining Flow: 04-defining-flow.md
+      - 5. The Workflow Shift: 05-workflow-shift.md
+      - 6. A Day in the Life: 06-day-in-the-life.md
+      - 7. The Transformation: 07-transformation.md
+      - 8. From Task to Momentum: 08-task-to-momentum.md
+      - 9. Scale: 09-scale.md
+      - 10. Guardrails: 10-guardrails.md
+      - 11. Responsible AI: 11-responsible.md
+      - 12. Reality Check: 12-reality-check.md
+      - 13. The New Shape of Work: 13-shape-of-work.md
+      - 14. Close: 14-close.md
+  - Demo: demo.md

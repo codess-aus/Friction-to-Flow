@@ -1,0 +1,311 @@
+/* ============================================================
+   From Friction to Flow — custom theme
+   High-contrast accessible palette:
+     - light: pure black text on pure white
+     - dark:  pure white text on pure black
+   Brand gradient: cyan -> blue -> purple
+   ============================================================ */
+
+:root {
+  --f2f-cyan:   #00e5ff;
+  --f2f-blue:   #2563ff;
+  --f2f-purple: #a855f7;
+  --f2f-gradient: linear-gradient(
+    90deg,
+    var(--f2f-cyan)   0%,
+    var(--f2f-blue)   50%,
+    var(--f2f-purple) 100%
+  );
+}
+
+/* ---------- LIGHT scheme: black on white ---------- */
+[data-md-color-scheme="f2f-light"] {
+  --md-default-bg-color:           #ffffff;
+  --md-default-fg-color:           #000000;
+  --md-default-fg-color--light:    #000000;
+  --md-default-fg-color--lighter:  #000000;
+  --md-default-fg-color--lightest: #ffffff;
+  --md-typeset-color:              #000000;
+  --md-typeset-a-color:            #2563ff;
+  --md-primary-fg-color:           #2563ff;
+  --md-primary-fg-color--light:    #2563ff;
+  --md-primary-fg-color--dark:     #2563ff;
+  --md-primary-bg-color:           #ffffff;
+  --md-accent-fg-color:            #a855f7;
+  --md-code-bg-color:              #ffffff;
+  --md-code-fg-color:              #000000;
+  --f2f-rule: #000000;
+}
+
+/* ---------- DARK scheme: white on black ---------- */
+[data-md-color-scheme="f2f-dark"] {
+  --md-default-bg-color:           #000000;
+  --md-default-fg-color:           #ffffff;
+  --md-default-fg-color--light:    #ffffff;
+  --md-default-fg-color--lighter:  #ffffff;
+  --md-default-fg-color--lightest: #000000;
+  --md-typeset-color:              #ffffff;
+  --md-typeset-a-color:            #00e5ff;
+  --md-primary-fg-color:           #000000;
+  --md-primary-bg-color:           #ffffff;
+  --md-accent-fg-color:            #00e5ff;
+  --md-code-bg-color:              #000000;
+  --md-code-fg-color:              #ffffff;
+  --f2f-rule: #ffffff;
+}
+
+/* Body text — force pure foreground colour, no greys */
+.md-typeset,
+.md-typeset p,
+.md-typeset li,
+.md-typeset blockquote,
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6,
+.md-typeset strong,
+.md-typeset em {
+  color: var(--md-default-fg-color);
+}
+
+/* Gradient header bar */
+.md-header {
+  background: var(--f2f-gradient) !important;
+  color: #ffffff;
+}
+.md-header__title,
+.md-header__topic,
+.md-header__button,
+.md-header a {
+  color: #ffffff !important;
+}
+
+/* Gradient tabs row */
+.md-tabs {
+  background: var(--f2f-gradient) !important;
+}
+.md-tabs__link {
+  color: #ffffff !important;
+  opacity: 1;
+}
+.md-tabs__link--active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 3px;
+}
+
+/* Search input contrast */
+.md-search__input {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+.md-search__input::placeholder { color: #ffffff; opacity: 0.85; }
+
+/* Links: visible, underlined for accessibility */
+.md-typeset a {
+  color: var(--md-typeset-a-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.md-typeset a:hover,
+.md-typeset a:focus {
+  color: var(--md-accent-fg-color);
+  text-decoration-thickness: 2px;
+}
+
+/* Focus ring (a11y) */
+a:focus-visible,
+button:focus-visible,
+.md-tabs__link:focus-visible,
+.md-nav__link:focus-visible,
+.md-search__input:focus-visible {
+  outline: 3px solid var(--f2f-purple);
+  outline-offset: 2px;
+}
+
+/* Blockquotes: gradient left bar */
+.md-typeset blockquote {
+  border-left: 6px solid transparent;
+  border-image: var(--f2f-gradient) 1;
+  padding-left: 1rem;
+  color: var(--md-default-fg-color);
+}
+
+/* Horizontal rules */
+.md-typeset hr {
+  border: 0;
+  height: 3px;
+  background: var(--f2f-gradient);
+  margin: 2.5rem 0;
+}
+
+/* H1 — gradient underline */
+.md-typeset h1 {
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+.md-typeset h1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 0.5rem;
+  background: var(--f2f-gradient);
+  border-radius: 2px;
+}
+
+/* Hero image at the top of each chapter */
+.md-typeset img.hero {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 0 0 2rem 0;
+  box-shadow: 0 0 0 3px transparent;
+  border-image: var(--f2f-gradient) 1;
+  border: 3px solid transparent;
+  background-image: var(--f2f-gradient);
+  background-origin: border-box;
+  background-clip: border-box;
+}
+
+/* Code blocks: pure contrast, no muddy backgrounds */
+.md-typeset code,
+.md-typeset pre code {
+  background: var(--md-code-bg-color);
+  color: var(--md-code-fg-color);
+  border: 1px solid var(--f2f-rule);
+  border-radius: 6px;
+}
+.md-typeset pre > code {
+  padding: 0.85rem 1rem;
+  display: block;
+}
+
+/* Tables */
+.md-typeset table:not([class]) {
+  border: 2px solid var(--f2f-rule);
+}
+.md-typeset table:not([class]) th {
+  background: var(--f2f-gradient);
+  color: #ffffff;
+}
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  border: 1px solid var(--f2f-rule);
+  color: var(--md-default-fg-color);
+}
+
+/* Sidebar nav text — full contrast */
+.md-nav__link,
+.md-nav__title {
+  color: var(--md-default-fg-color) !important;
+  opacity: 1;
+}
+.md-nav__link--active,
+.md-nav__link[aria-current="page"] {
+  font-weight: 700;
+  background: var(--f2f-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}
+
+/* Footer */
+.md-footer,
+.md-footer-meta {
+  background: #000000;
+  color: #ffffff;
+}
+[data-md-color-scheme="f2f-light"] .md-footer,
+[data-md-color-scheme="f2f-light"] .md-footer-meta {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* Landing page hero card */
+.f2f-hero {
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  background: var(--f2f-gradient);
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.f2f-hero h1,
+.f2f-hero p,
+.f2f-hero a {
+  color: #ffffff !important;
+}
+.f2f-hero h1::after { display: none; }
+.f2f-hero a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Chapter grid on home page */
+.f2f-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.f2f-card {
+  display: block;
+  padding: 1rem 1.25rem;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background-image:
+    linear-gradient(var(--md-default-bg-color), var(--md-default-bg-color)),
+    var(--f2f-gradient);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  color: var(--md-default-fg-color) !important;
+  text-decoration: none !important;
+  font-weight: 600;
+}
+.f2f-card:hover,
+.f2f-card:focus {
+  background-image:
+    var(--f2f-gradient),
+    var(--f2f-gradient);
+  color: #ffffff !important;
+}
+
+/* Demo video container — responsive 16:9 */
+.f2f-video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 3px solid transparent;
+  background-image:
+    linear-gradient(var(--md-default-bg-color), var(--md-default-bg-color)),
+    var(--f2f-gradient);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  margin: 1.5rem 0 2rem 0;
+}
+.f2f-video video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
+/* Wider responsive type at small viewports */
+@media (max-width: 600px) {
+  .md-typeset h1 { font-size: 1.8rem; }
+  .md-typeset h2 { font-size: 1.4rem; }
+  .f2f-hero { padding: 1.25rem 1rem; }
+}
