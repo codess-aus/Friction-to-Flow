@@ -31,7 +31,7 @@ the table before. But I still own the code. Always.
 
 <div class="f2f-gallery">
 
-  <a class="f2f-tile f2f-tile--wide" href="01-friction-to-flow/">
+  <a class="f2f-tile" href="01-friction-to-flow/">
     <img src="assets/1-friction-to-flow.png" alt="">
     <div class="f2f-tile__body">
       <span class="f2f-tile__num">01</span>
@@ -76,7 +76,7 @@ the table before. But I still own the code. Always.
     </div>
   </a>
 
-  <a class="f2f-tile f2f-tile--wide" href="06-day-in-the-life/">
+  <a class="f2f-tile" href="06-day-in-the-life/">
     <img src="assets/6-day-in-the-life.png" alt="">
     <div class="f2f-tile__body">
       <span class="f2f-tile__num">06</span>
@@ -130,7 +130,7 @@ the table before. But I still own the code. Always.
     </div>
   </a>
 
-  <a class="f2f-tile f2f-tile--wide" href="12-reality-check/">
+  <a class="f2f-tile" href="12-reality-check/">
     <img src="assets/12-reality-check.png" alt="">
     <div class="f2f-tile__body">
       <span class="f2f-tile__num">12</span>

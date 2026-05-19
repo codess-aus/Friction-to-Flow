@@ -271,11 +271,13 @@ button:focus-visible,
   transition: transform 0.15s ease;
 }
 .f2f-btn:hover { transform: translateY(-2px); }
-.f2f-btn--solid {
+.f2f-btn--solid,
+.f2f-hero a.f2f-btn--solid {
   background: #ffffff;
   color: #000000 !important;
 }
-.f2f-btn--ghost {
+.f2f-btn--ghost,
+.f2f-hero a.f2f-btn--ghost {
   background: transparent;
   color: #ffffff !important;
 }
@@ -305,11 +307,6 @@ button:focus-visible,
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.25rem;
   margin: 1.5rem 0 2rem 0;
-}
-
-/* Wide tile spans 2 columns on larger viewports */
-@media (min-width: 720px) {
-  .f2f-tile--wide { grid-column: span 2; }
 }
 
 .f2f-tile {
@@ -344,7 +341,6 @@ button:focus-visible,
   object-position: center;
   background: #000000;
 }
-.f2f-tile--wide img { height: 240px; }
 
 .f2f-tile__body {
   display: flex;
@@ -352,6 +348,7 @@ button:focus-visible,
   gap: 0.35rem;
   padding: 1rem 1.1rem 1.15rem 1.1rem;
   background: var(--md-default-bg-color);
+  flex: 1;
 }
 .f2f-tile__body--center {
   text-align: center;
