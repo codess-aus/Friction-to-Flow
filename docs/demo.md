@@ -3,9 +3,9 @@
 <div class="f2f-video" markdown>
 <video controls preload="metadata" playsinline
        aria-label="GitHub Copilot Coding Agents demo video">
-  <source src="assets/AgentsDemo.mp4" type="video/mp4">
+  <source src="../assets/AgentsDemo.mp4" type="video/mp4">
   Your browser does not support embedded video. You can
-  <a href="assets/AgentsDemo.mp4">download the demo (MP4)</a> instead.
+  <a href="../assets/AgentsDemo.mp4">download the demo (MP4)</a> instead.
 </video>
 </div>
 
