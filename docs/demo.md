@@ -9,27 +9,6 @@
 </video>
 </div>
 
-> *Two minutes of an agent picking up a task, opening a draft pull request,
-> and handing it back for review. Fast. Boring. Exactly what you want.*
-
----
-
-## What you just watched
-
-The demo shows a **GitHub Copilot coding agent** taking an issue, planning
-the change, editing files inside a sandboxed cloud environment, running the
-tests, and opening a **draft pull request** with a written summary of what
-it did and why. From there, the human (me) reviews, comments, requests
-changes, and merges — exactly the same workflow the team already uses for
-human-authored PRs.
-
-That is the whole shape of it. The agent is not "the new developer." It is
-a **fast, literal-minded teammate** that runs in parallel with you and is
-gated by the same pull-request, branch-protection, and review rules as
-everybody else.
-
----
-
 ## What GitHub Copilot Coding Agents are
 
 *(Snapshot of the feature set as of April–May 2026. Capabilities change
