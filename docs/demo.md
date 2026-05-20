@@ -1,4 +1,4 @@
-# Demo — GitHub Copilot Coding Agents in Action
+# Demo - GitHub Copilot Coding Agents in Action
 
 <div class="f2f-video" markdown>
 <video controls preload="metadata" playsinline
@@ -12,13 +12,13 @@
 ## What GitHub Copilot Coding Agents are
 
 *(Snapshot of the feature set as of April–May 2026. Capabilities change
-quickly — check the official
+quickly, check the official
 [GitHub Copilot docs](https://docs.github.com/en/copilot) for the current
 state.)*
 
 GitHub Copilot has grown from an in-editor pair-programmer into a family
 of **agentic experiences** that span the IDE, github.com, mobile, and CLI.
-The piece this demo focuses on is the **coding agent** — an autonomous
+The piece this demo focuses on is the **coding agent**, an autonomous
 worker you can hand a task to and walk away from.
 
 ### Where you can launch an agent
@@ -39,7 +39,7 @@ worker you can hand a task to and walk away from.
 2. **The agent spins up an ephemeral, sandboxed environment.** It clones
    the repo onto a fresh runner with the network policy you configured.
 3. **It plans, edits, and runs.** It reads the code, makes changes across
-   files, runs your build, your tests, your linters, your scanners — all
+   files, runs your build, your tests, your linters, your scanners, all
    the things your CI normally runs.
 4. **It opens a draft pull request.** The PR description includes the
    plan, the diff summary, the commands it ran, and the results.
@@ -58,13 +58,13 @@ The themes the GitHub team has been pushing in recent releases:
 - **MCP everywhere.** Coding agents speak the
   [Model Context Protocol](https://modelcontextprotocol.io/), so you can
   give them access to your internal docs, ticketing system, observability
-  stack, or any other MCP server — under policies you control.
+  stack, or any other MCP server, under policies you control.
 - **`AGENTS.md` as a first-class concept.** A repo-level file that tells
   agents how this codebase wants to be worked on: build commands,
   conventions, no-go areas, review expectations. Treated as durable
   guidance, not a system prompt.
 - **Parallel agents.** You can run multiple coding agents at once against
-  the same repo — typically one per task — and they each get isolated
+  the same repo, typically one per task, and they each get isolated
   branches and PRs.
 - **Org-level policy and governance.** Admins can scope which repos can
   use coding agents, control network egress from agent sandboxes, set
@@ -86,7 +86,7 @@ The themes the GitHub team has been pushing in recent releases:
 The honest list, based on actually using them.
 
 - **Boilerplate and scaffolding.** New DTO, repository class, route,
-  CRUD endpoint, test fixture — the agent flies through these.
+  CRUD endpoint, test fixture, the agent flies through these.
 - **Repetitive refactors across many files.** Renaming, extracting,
   migrating from one pattern to another, updating call sites after an
   API change.
@@ -96,7 +96,7 @@ The honest list, based on actually using them.
 - **Dependency hygiene and small upgrades.** Bumping a library and
   fixing the obvious breakage; cleaning up unused imports; aligning
   versions across a monorepo.
-- **Doc drafts.** READMEs, API references, runbooks — first drafts
+- **Doc drafts.** READMEs, API references, runbooks, first drafts
   that you sharpen.
 - **Issue triage and reproduction.** "Try to reproduce this bug in a
   test." The agent will often write a failing test that captures the
@@ -109,7 +109,7 @@ The honest list, based on actually using them.
 The parts that need a human in the seat:
 
 - **Architecture decisions.** Module boundaries, data model design,
-  framework choice — these need context the agent does not have.
+  framework choice, these need context the agent does not have.
 - **Anything user-facing without taste.** Copy, UX, naming, accessibility
   judgement.
 - **Security-critical code paths.** Auth, crypto, payment, data egress.
@@ -118,7 +118,7 @@ The parts that need a human in the seat:
   give the agent runtime access to live systems unless the policy is
   designed for it.
 - **Anything where being wrong is expensive and hard to detect.** The
-  agent is fast and confident — that is exactly when you need to slow
+  agent is fast and confident, that is exactly when you need to slow
   down and verify.
 
 ---
@@ -135,7 +135,7 @@ without losing control.
 2. **Pin a `copilot-instructions.md`** with codebase-specific guidance
    (style, error handling, logging, naming).
 3. **Keep CI honest.** Lint, type-check, unit, integration, security
-   scans — all required, all blocking. The agent benefits from a fast,
+   scans, all required, all blocking. The agent benefits from a fast,
    strict CI more than anyone, because it iterates against it.
 4. **Configure branch protections.** Require reviews. Require checks.
    Require signed commits where it matters. The agent must play by the
@@ -180,7 +180,7 @@ without losing control.
 GitHub Copilot coding agents are **fast, literal, tireless teammates**.
 They will take the toil off your plate at a scale that genuinely changes
 what one developer can ship. They will not protect your job, and they
-will not protect your codebase. **You** do that — by bringing judgement,
+will not protect your codebase. **You** do that, by bringing judgement,
 creativity, oversight, and ownership to every PR they open.
 
 Partner with them. Don't outsource to them. Stay in the loop. Own the

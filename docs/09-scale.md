@@ -1,6 +1,6 @@
 ![Scale](assets/9-scale.png){ .hero }
 
-# Chapter 9 — Scale
+# Chapter 9 - Scale
 
 > *Copilot isn't just an accelerant. It's an amplifier.*
 
@@ -18,7 +18,7 @@ What does that look like at scale?
 - I produce **more tests, more docs, more guardrails** around my work, because they're no longer the thing I sacrifice when time gets short.
 - I take on **more ambitious projects**, because the toil-to-value ratio finally tips in my favour.
 
-That last one is the headline. You don't just do the same job a little faster and a little cheaper. You do things you genuinely thought were out of reach. The scale of what one person can carry, end-to-end, has changed — and that changes what your team can credibly take on.
+That last one is the headline. You don't just do the same job a little faster and a little cheaper. You do things you genuinely thought were out of reach. The scale of what one person can carry, end-to-end, has changed, and that changes what your team can credibly take on.
 
 <!--
 Speaker note (~2 min): Use the *accelerant vs amplifier* contrast to reset

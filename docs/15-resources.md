@@ -1,4 +1,4 @@
-# Chapter 15 — Resources
+# Chapter 15 - Resources
 
 Useful links to keep exploring GitHub Copilot and related tools:
 

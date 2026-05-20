@@ -1,8 +1,8 @@
 ![The Transformation](assets/7-transformation.png){ .hero }
 
-# Chapter 7 — The Transformation
+# Chapter 7 - The Transformation
 
-> *The before and the after — not in features, but in feel.*
+> *The before and the after, not in features, but in feel.*
 
 If I had to summarise the transformation in plain language, it's this:
 
@@ -15,7 +15,7 @@ If I had to summarise the transformation in plain language, it's this:
 
 Notice what's missing from that list: I didn't say "I write more code." I didn't say "I work more hours." I didn't say "I closed more tickets." Those are the wrong scoreboard. The right scoreboard is **what I shipped, how good it was, and how I felt at the end of the day.** All three got better.
 
-That's the transformation. It's quieter than the marketing slides suggest. It's also more durable, because it isn't a sugar rush — it's a structural change in how the work is shaped.
+That's the transformation. It's quieter than the marketing slides suggest. It's also more durable, because it isn't a sugar rush, it's a structural change in how the work is shaped.
 
 <!--
 Speaker note (~2 min): This is the emotional turn of the talk. Slow down.

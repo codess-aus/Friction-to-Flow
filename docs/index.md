@@ -2,9 +2,9 @@
 
 # From Friction to Flow
 
-**A developer story — productivity, trust, and agentic AI at work.**
+**A developer story - productivity, trust, and agentic AI at work.**
 
-How GitHub Copilot transformed my daily workflow and amplified my impact —
+How GitHub Copilot transformed my daily workflow and amplified my impact , 
 from chaos and context-switching to calm, deep, high-value work, with a
 human still holding the wheel.
 
@@ -21,7 +21,7 @@ My days used to be friction: tickets, alerts, context switches, half-finished
 branches, an ever-growing surface of things to know. Then the workflow
 shifted. I started talking to GitHub Copilot, planning the work with it,
 delegating the toil to agents, and keeping the judgement, creativity, and
-review for myself. Copilot is an **accelerant** and an **amplifier** — it
+review for myself. Copilot is an **accelerant** and an **amplifier**, it
 doesn't just do the same job faster, it makes work possible that wasn't on
 the table before. But I still own the code. Always.
 
@@ -63,7 +63,7 @@ the table before. But I still own the code. Always.
     <div class="f2f-tile__body">
       <span class="f2f-tile__num">04</span>
       <span class="f2f-tile__title">Defining Flow</span>
-      <span class="f2f-tile__desc">Calmer, deeper — not faster, louder.</span>
+      <span class="f2f-tile__desc">Calmer, deeper, not faster, louder.</span>
     </div>
   </a>
 
@@ -90,7 +90,7 @@ the table before. But I still own the code. Always.
     <div class="f2f-tile__body">
       <span class="f2f-tile__num">07</span>
       <span class="f2f-tile__title">The Transformation</span>
-      <span class="f2f-tile__desc">Before and after — in feel, not features.</span>
+      <span class="f2f-tile__desc">Before and after, in feel, not features.</span>
     </div>
   </a>
 
